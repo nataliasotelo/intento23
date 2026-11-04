@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mini quiz (versión básica)</title>
+  <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+  <h1>Mini quiz del DOM</h1>
+
+  <p>Puntos: <strong id="puntos">0</strong></p>
+  <div class="barra"><div id="progreso"></div></div>
+  <p id="texto-progreso">0 de 5 correctas</p>
+
+  <!-- Pregunta 1: opción múltiple -->
+  <section class="pregunta">
+    <h2>1. ¿Qué método selecciona un elemento usando un selector CSS?</h2>
+    <label><input type="radio" name="pregunta1" id="p1a"> getElementById</label>
+    <label><input type="radio" name="pregunta1" id="p1b"> querySelector</label>
+    <label><input type="radio" name="pregunta1" id="p1c"> createElement</label>
+    <button id="boton1">Responder</button>
+    <p class="feedback" id="feedback1"></p>
+  </section>
+
+  <!-- Pregunta 2: opción múltiple -->
+  <section class="pregunta">
+    <h2>2. ¿Qué propiedad cambia el texto de un elemento?</h2>
+    <label><input type="radio" name="pregunta2" id="p2a"> className</label>
+    <label><input type="radio" name="pregunta2" id="p2b"> parentElement</label>
+    <label><input type="radio" name="pregunta2" id="p2c"> textContent</label>
+    <button id="boton2">Responder</button>
+    <p class="feedback" id="feedback2"></p>
+  </section>
+
+  <!-- Pregunta 3: opción múltiple -->
+  <section class="pregunta">
+    <h2>3. ¿Qué método permite reaccionar a un clic?</h2>
+    <label><input type="radio" name="pregunta3" id="p3a"> addEventListener</label>
+    <label><input type="radio" name="pregunta3" id="p3b"> remove</label>
+    <label><input type="radio" name="pregunta3" id="p3c"> append</label>
+    <button id="boton3">Responder</button>
+    <p class="feedback" id="feedback3"></p>
+  </section>
+
+  <!-- Pregunta 4: completar con una palabra -->
+  <section class="pregunta">
+    <h2>4. Completá la palabra que falta</h2>
+    <p>Para crear un elemento nuevo escribimos: <code>document.<input type="text" id="p4" size="14" placeholder="escribí acá">("li")</code></p>
+    <button id="boton4">Responder</button>
+    <p class="feedback" id="feedback4"></p>
+  </section>
+
+  <!-- Pregunta 5: completar con una palabra -->
+  <section class="pregunta">
+    <h2>5. Completá la palabra que falta</h2>
+    <p>Para agregar una clase a un elemento escribimos: <code>boton.classList.<input type="text" id="p5" size="10" placeholder="escribí acá">("activo")</code></p>
+    <button id="boton5">Responder</button>
+    <p class="feedback" id="feedback5"></p>
+  </section>
+
+  <script src="quiz-basico.js" defer></script>
+</body>
+</html>
